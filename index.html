@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za unos podataka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unesite svoje podatke</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" required>
+            </div>
+            <div class="form-group">
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" required>
+            </div>
+            <div class="form-group">
+                <label for="maticniBroj">Matični broj:</label>
+                <input type="text" id="maticniBroj" name="maticniBroj" maxlength="13" required>
+            </div>
+            <div class="form-group">
+                <label for="godiste">Godište:</label>
+                <input type="number" id="godiste" name="godiste" required>
+            </div>
+            <div class="form-group">
+                <label for="adresa">Adresa:</label>
+                <input type="text" id="adresa" name="adresa" required>
+            </div>
+            <div class="form-group">
+                <label for="telefon">Telefon (format: +38700000000):</label>
+                <input type="text" id="telefon" name="telefon" placeholder="+38700000000" maxlength="12" required>
+            </div>
+            <div class="form-group">
+                <label for="visina">Visina (cm):</label>
+                <input type="number" id="visina" name="visina" required>
+            </div>
+            <div class="form-group">
+                <label for="tezina">Težina (kg):</label>
+                <input type="number" id="tezina" name="tezina" required>
+            </div>
+            <div class="form-group">
+                <label for="pol">Pol:</label>
+                <select id="pol" name="pol" required>
+                    <option value="Muško">Muško</option>
+                    <option value="Žensko">Žensko</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="krvnaGrupa">Krvna grupa:</label>
+                <select id="krvnaGrupa" name="krvnaGrupa" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="0+">0+</option>
+                    <option value="0-">0-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alergije">Alergije:</label>
+                <select id="alergije" name="alergije" required>
+                    <option value="Ne">Ne</option>
+                    <option value="Da">Da</option>
+                </select>
+                <input type="text" id="opisAlergije" name="opisAlergije" placeholder="Opis alergije" maxlength="20" style="display: none;">
+            </div>
+            <div class="form-group">
+                <label for="zanimanje">Zanimanje:</label>
+                <input type="text" id="zanimanje" name="zanimanje" required>
+            </div>
+            <div id="output"></div>
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
